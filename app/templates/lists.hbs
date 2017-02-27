@@ -1,0 +1,14 @@
+
+<div class="infinite-width lists">
+	{{#each model as |list|}}
+		{{#dashboard-list list=list }} {{/dashboard-list}}
+	{{/each}}
+	<div class="new-list">
+		<h1>{{ model.length }}</h1>
+		<form {{action "create" on "submit" }}>
+			{{input type="text" class="form-control" value=listTitle placeholder="Nombre de la lista"
+			 autofocus="true"}}
+			{{input type="submit" class="btn btn-success" value="Crear lista"}}
+		</form>
+	</div>
+</div>

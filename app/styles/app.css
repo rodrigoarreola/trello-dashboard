@@ -1,0 +1,50 @@
+body{
+	background-color: #2196F3;
+}
+
+.btn-bottom{
+	bottom: 0;
+}
+.infinite-width{
+	white-space: nowrap;
+}
+
+.list h2{
+	height: 1.2em;
+	font-size: 18px;
+	margin: 0;
+}
+
+.list .todos{
+	height: 90vh;
+	overflow-y: scroll;
+}
+
+.lists-container{
+	width: 100%;
+	overflow-x: scroll;
+}
+
+.list{
+	background-color: #E0E0E0;
+	display: inline-block;
+	width: 300px;
+	vertical-align: top;
+	margin-right: 1em;
+}
+
+.list > div{
+	background-color: #E0E0E0;
+	display: inline-block;
+	width: 300px;
+	vertical-align: top;
+	margin-right: 1em;
+}
+
+.new-list{
+	padding: 1em; 
+}
+
+.new-list input[type="submit"]{
+	margin-top: 0.8em;
+}
