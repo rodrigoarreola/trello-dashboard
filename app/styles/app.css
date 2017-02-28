@@ -2,9 +2,7 @@ body{
 	background-color: #2196F3;
 }
 
-.btn-bottom{
-	bottom: 0;
-}
+
 .infinite-width{
 	white-space: nowrap;
 }
@@ -18,6 +16,7 @@ body{
 .list .todos{
 	height: 90vh;
 	overflow-y: scroll;
+	overflow-y: hidden;
 }
 
 .lists-container{
@@ -25,26 +24,33 @@ body{
 	overflow-x: scroll;
 }
 
-.list{
+/*Se pone así porque ember coloca sus propios div's entonces tenemos que entrar
+un nivel adentro*/
+.lists > div{
 	background-color: #E0E0E0;
 	display: inline-block;
 	width: 300px;
 	vertical-align: top;
 	margin-right: 1em;
-}
-
-.list > div{
-	background-color: #E0E0E0;
-	display: inline-block;
-	width: 300px;
-	vertical-align: top;
-	margin-right: 1em;
+	padding: 10px;
 }
 
 .new-list{
-	padding: 1em; 
+	padding: 1em;
 }
 
 .new-list input[type="submit"]{
 	margin-top: 0.8em;
+}
+
+.card{
+	padding: 10px;
+	background-color: white;
+	padding-top: 8px;
+	border-bottom: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.form-hide{
+	display: none;
 }
